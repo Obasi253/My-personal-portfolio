@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planner | Obasi-Areh Obi</title>
+<meta name="description" content="Academic planner: add, complete and delete revision tasks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container">
+<a class="brand" href="index.html">Obasi-Areh Obi</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav class="nav" id="site-nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" aria-current="page">Planner</a></li><li><a href="contact.html">Contact</a></li><li><a href="cgpa.html">CGPA</a></li></ul></nav>
+</div></header>
+<main id="main">
+
+<div class="page-title"><div class="container"><h1>Academic planner</h1><p>Tasks are saved in this browser. Exam revision tasks are pre-loaded.</p></div></div>
+<section class="section"><div class="container planner-layout">
+<form class="task-form" id="task-form" novalidate>
+<div class="field field-wide"><label for="task-title">Task</label><input type="text" id="task-title" name="title" placeholder="e.g. Revise MTH 102 past questions"><span class="error-message" id="task-error"></span></div>
+<div class="field"><label for="task-due">Due date (optional)</label><input type="date" id="task-due" name="due"></div>
+<button class="btn" type="submit">Add task</button>
+</form>
+<div>
+<p class="planner-summary" id="planner-summary" aria-live="polite"></p>
+<div class="filter-bar" role="group" aria-label="Filter tasks">
+<button class="filter-btn is-active" type="button" data-filter="all">All</button>
+<button class="filter-btn" type="button" data-filter="active">To do</button>
+<button class="filter-btn" type="button" data-filter="done">Done</button>
+</div>
+<ul class="task-list" id="task-list"></ul>
+</div></div></section>
+</main>
+<footer class="site-footer"><div class="container">
+<p class="mb-0">© <span id="year">2026</span> Obasi-Areh Obi · B.Sc. Computer Science, MIVA Open University</p>
+<ul><li><a href="mailto:o.obi0800@miva.edu.ng">o.obi0800@miva.edu.ng</a></li><li><a href="https://github.com/Obasi253">GitHub: Obasi253</a></li></ul>
+</div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CGPA Calculator | Obasi-Areh Obi</title>
+<meta name="description" content="A 5.0-scale CGPA calculator for MIVA Open University students.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container">
+<a class="brand" href="index.html">Obasi-Areh Obi</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav class="nav" id="site-nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html">Planner</a></li><li><a href="contact.html">Contact</a></li><li><a href="cgpa.html" aria-current="page">CGPA</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="page-title"><div class="container"><h1>MIVA 5.0 CGPA Calculator</h1><p>Pick a grade for each course, then calculate. The courses are from my second semester. Check the credit units against your course guide before you trust the result.</p></div></div>
+<section class="section"><div class="container split">
+<div class="split-label"><h2>Courses</h2><p>5.0 scale: A 5, B 4, C 3, D 2, E 1, F 0.</p></div>
+<div class="stack">
+<form class="form" id="cgpa-form" novalidate>
+<div class="calc-head" aria-hidden="true"><span>Course</span><span>Units</span><span>Grade</span><span></span></div>
+<div id="course-rows"></div>
+<div class="cluster"><button class="btn btn-secondary" type="button" id="add-course">Add course</button></div>
+<fieldset><legend>Previous record (optional, for cumulative CGPA)</legend>
+<div class="grid grid-2">
+<div class="field"><label for="prev-units">Total units so far</label><input type="number" id="prev-units" min="0" step="1" inputmode="numeric"></div>
+<div class="field"><label for="prev-cgpa">CGPA so far</label><input type="number" id="prev-cgpa" min="0" max="5" step="0.01" inputmode="decimal"></div>
+</div></fieldset>
+<p class="form-status" id="calc-status" role="status"></p>
+<div class="cluster"><button class="btn" type="submit">Calculate GPA</button><button class="btn btn-secondary" type="button" id="reset-courses">Reset courses</button></div>
+</form>
+<article class="card" id="result" hidden>
+<h2>Result</h2>
+<dl class="summary"><dt>Semester GPA</dt><dd class="big" id="res-gpa"></dd><dt>Units counted</dt><dd id="res-units"></dd><dt>Quality points</dt><dd id="res-points"></dd><dt>Cumulative CGPA</dt><dd id="res-cgpa"></dd></dl>
+</article>
+</div></div></section>
+</main>
+<footer class="site-footer"><div class="container">
+<p class="mb-0">© <span id="year">2026</span> Obasi-Areh Obi · B.Sc. Computer Science, MIVA Open University</p>
+<ul><li><a href="mailto:o.obi0800@miva.edu.ng">o.obi0800@miva.edu.ng</a></li><li><a href="https://github.com/Obasi253">GitHub: Obasi253</a></li></ul>
+</div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

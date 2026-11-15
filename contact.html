@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Obasi-Areh Obi</title>
+<meta name="description" content="Contact Obasi-Areh Obi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container">
+<a class="brand" href="index.html">Obasi-Areh Obi</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav class="nav" id="site-nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html">Planner</a></li><li><a href="contact.html" aria-current="page">Contact</a></li><li><a href="cgpa.html">CGPA</a></li></ul></nav>
+</div></header>
+<main id="main">
+
+<div class="page-title"><div class="container"><h1>Contact</h1><p>For collaborations, scholarships, internships or questions about my projects.</p></div></div>
+<section class="section"><div class="container split">
+<div class="split-label"><h2>Direct</h2></div>
+<ul><li>Email: <a href="mailto:o.obi0800@miva.edu.ng">o.obi0800@miva.edu.ng</a></li><li>GitHub: <a href="https://github.com/Obasi253">github.com/Obasi253</a></li></ul>
+</div></section>
+<section class="section"><div class="container split">
+<div class="split-label"><h2>Send a message</h2></div>
+<div class="stack">
+<form class="form" id="contact-form" novalidate>
+<div class="field"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name"><span class="error-message"></span></div>
+<div class="field"><label for="email">Email address</label><input type="email" id="email" name="email" autocomplete="email"><span class="error-message"></span></div>
+<div class="field"><label for="phone">Phone number (digits only)</label><input type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel"><span class="error-message"></span></div>
+<div class="field"><label for="message">Message</label><textarea id="message" name="message"></textarea><span class="error-message"></span></div>
+<p class="form-status" id="form-status" role="status"></p>
+<div><button class="btn" type="submit">Send message</button></div>
+</form>
+<article class="card" id="confirmation" tabindex="-1" hidden>
+<h2>Message Recorded</h2>
+<p>Here is a summary of what you entered.</p>
+<dl class="summary"><dt>Name</dt><dd id="sum-name"></dd><dt>Email</dt><dd id="sum-email"></dd><dt>Phone</dt><dd id="sum-phone"></dd><dt>Message</dt><dd id="sum-message"></dd></dl>
+<p class="text-muted">This site has no server, so nothing is stored or sent from this page. Use the button below to deliver the message by email.</p>
+<div class="cluster"><a class="btn" id="send-email" href="mailto:o.obi0800@miva.edu.ng">Send by email</a><button class="btn btn-secondary" type="button" id="new-message">Write another message</button></div>
+</article>
+</div></div></section>
+</main>
+<footer class="site-footer"><div class="container">
+<p class="mb-0">© <span id="year">2026</span> Obasi-Areh Obi · B.Sc. Computer Science, MIVA Open University</p>
+<ul><li><a href="mailto:o.obi0800@miva.edu.ng">o.obi0800@miva.edu.ng</a></li><li><a href="https://github.com/Obasi253">GitHub: Obasi253</a></li></ul>
+</div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
